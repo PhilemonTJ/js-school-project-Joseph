@@ -27,15 +27,6 @@ Create a semantic and accessible static skeleton for the timeline app using HTML
   - `alt` text on placeholder images
   - Logical content structure using semantic elements
 
-### 🧪 How to Test
-
-1. Open `index.html` in your browser.
-2. Ensure:
-   - All key structural tags are present
-   - Placeholders render for header, nav, timeline section, and modal
-   - Logo and theme toggle button are visible
-   - Page structure is readable and accessible (screen reader friendly)
-
 ---
 
 ## 📅 Roadmap
