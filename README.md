@@ -29,12 +29,32 @@ Create a semantic and accessible static skeleton for the timeline app using HTML
 
 ---
 
+## ✅ Task 2: CSS (Responsive Layout) – Completed
+
+### 🎯 Outcome
+
+A responsive, visually structured layout using Flexbox and CSS Grid. Styled according to design reference.
+
+### 🔨 Deliverables
+
+- **Color Palette**: Dark blue header/footer, white/light card backgrounds
+- **Header**: Flex layout with logo/title on the left and theme toggle on the right
+- **Filter Bar**: Pill-shaped dropdown selectors with spacing
+- **Timeline Grid**: 
+  - Responsive card layout (1–3 columns depending on screen size)
+  - Event cards with images, headings, date text, and descriptions
+- **Footer**: Copyright, License Info.
+- **Responsiveness**: Breakpoints at 768px and 1024px
+- **Variables**: CSS variables for colors and themes for easy dark mode support later
+
+---
+
 ## 📅 Roadmap
 
 | Task # | Stage | Outcome |
 |--------|-------|---------|
 | ✅ 1    | **HTML** | Semantic, accessible skeleton |
-| ⏳ 2    | **CSS** | Responsive static layout with Flexbox/Grid |
+| ✅ 2    | **CSS** | Responsive static layout with Flexbox/Grid |
 | ⏳ 3    | **JavaScript** | DOM interaction, events, dynamic timeline |
 | ⏳ 4    | **TypeScript** | Strongly typed version of logic and models |
 | ⏳ 5    | **React** | Component-based architecture with dynamic rendering |
@@ -46,7 +66,7 @@ Create a semantic and accessible static skeleton for the timeline app using HTML
 ```
 js-school-project-Joseph/
 ├── index.html      # Semantic HTML layout (Task 1)
-├── styles.css      # To be added in Task 2
+├── styles.css      # Responsive static layout (Task 2)
 ├── script.js       # To be added in Task 3
 ├── README.md       # Project goal, roadmap, and task status
 └── .gitignore      # Optional (Node/TS/React-specific)
@@ -57,7 +77,7 @@ js-school-project-Joseph/
 ## 🧑‍💻 Tech Stack (Planned)
 
 - **HTML5** – Semantic structure ✔️
-- **CSS3 (Flexbox/Grid)** – Responsive layout
+- **CSS3 (Flexbox/Grid)** – Responsive layout ✔️
 - **JavaScript (ES6+)** – Interactivity
 - **TypeScript** – Strong typing and tooling
 - **React + Vite** – SPA with reusable components
@@ -67,9 +87,9 @@ js-school-project-Joseph/
 
 ## 📌 Status
 
-**Current Task:** ✅ Task 1 Complete – Skeleton with semantic HTML, logo, modal placeholder, and accessibility baseline.
+**Current Task:** ✅ Task 2 Complete – HTML and CSS implemented with responsive grid and filter layout.
 
-Ready to proceed to: **Task 2 – CSS Styling and Layout**.
+Next: **Task 3 – JavaScript for Interactivity**.
 
 ---
 
