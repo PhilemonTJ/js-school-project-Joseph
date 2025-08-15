@@ -52,25 +52,28 @@ A responsive, visually structured layout using Flexbox and CSS Grid. Styled acco
 
 ### 🎯 Outcome
 
-Implemented event fetching, rendering, and modal functionality with vanilla JavaScript for a fully interactive experience.
+The timeline is now fully interactive: events are loaded from a JSON file, rendered dynamically as cards, and detailed information is shown in a modal popup when an event is clicked.
 
 ### 🔨 Deliverables
 
 - **Data Source**:  
-  - `data/events.json` containing at least 8 events (year, title, description, imageURL, category).
+  - `events.json` in the project root contains at least 8 events, each with `year`, `title`, `description`, `imageURL`, and `category`.
 
 - **Dynamic Rendering**:
-  - Fetch and parse `events.json` asynchronously.
-  - Populate `#timeline` section with dynamically generated event markers/cards.
+  - `script.js` fetches and parses `events.json` asynchronously.
+  - The `#timeline` section is populated with event cards generated in JavaScript, each displaying the event’s image, title, year, and a short description.
 
 - **Interactivity**:
-  - Click on event markers to open `#modal` with full event details.
-  - Modal includes image, year, title, category, and description.
-  - Close modal using a close button or by clicking outside.
+  - Clicking an event card opens a modal (`#modal`) with full event details, including image, year, title, category, and description.
+  - Modal can be closed via a close button or by clicking outside the modal content.
+  - Accessibility features: modal uses `role="dialog"`, `aria-hidden`, and focus management for keyboard navigation.
 
 - **Code Placement**:
-  - All logic in `script.js`
-  - Script loaded at the end of `<body>` in `index.html` for optimal performance.
+  - All JavaScript logic is in `script.js`.
+  - The script is loaded at the end of `<body>` in `index.html` for optimal performance.
+
+**Result:**  
+Timeline events are now loaded dynamically and displayed as interactive cards. Users can view detailed event information in an accessible
 
 
 ---

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "year": 1969,
+    "title": "First Moon Landing",
+    "description": "Neil Armstrong became the first human to walk on the Moon during NASA's Apollo 11 mission, followed shortly after by Buzz Aldrin. The landing on July 20, 1969, marked a historic triumph in space exploration, symbolizing human ingenuity and perseverance. This mission inspired generations of scientists, engineers, and dreamers worldwide, demonstrating that seemingly impossible goals could be achieved with vision, dedication, and collaboration.",
+    "imageURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
+    "category": "Space"
+  },
+  {
+    "id": 2,
+    "year": 1989,
+    "title": "Fall of the Berlin Wall",
+    "description": "The Berlin Wall, which had divided East and West Berlin for nearly three decades, was brought down in November 1989. The event symbolized the collapse of communist regimes across Eastern Europe and marked the end of the Cold War era. People from both sides reunited in celebration, chipping away at the concrete barrier that had physically and ideologically separated them for years, leading to the eventual reunification of Germany.",
+    "imageURL": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
+    "category": "History"
+  },
+  {
+    "id": 3,
+    "year": 1995,
+    "title": "Birth of the World Wide Web",
+    "description": "Tim Berners-Lee's creation of the World Wide Web transformed the way humans access, share, and create information. In 1995, the first public websites began to emerge, revolutionizing communication, commerce, and education. The Web became a foundation for the modern internet, enabling an interconnected digital world and laying the groundwork for social media, e-commerce, and online collaboration as we know them today.",
+    "imageURL": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop",
+    "category": "Technology"
+  },
+  {
+    "id": 4,
+    "year": 2001,
+    "title": "9/11 Attacks",
+    "description": "On September 11, 2001, coordinated terrorist attacks targeted the United States, destroying the Twin Towers in New York City and damaging the Pentagon. Nearly 3,000 lives were lost in the tragedy, which reshaped global politics and security policies. The event prompted widespread anti-terrorism measures, military interventions, and significant changes in air travel security worldwide, leaving a lasting impact on international relations and collective memory.",
+    "imageURL": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+    "category": "History"
+  },
+  {
+    "id": 5,
+    "year": 2007,
+    "title": "iPhone Launch",
+    "description": "Apple's release of the first iPhone in 2007 revolutionized mobile technology by combining a phone, an iPod, and an internet communicator into one sleek device. The introduction of a multi-touch interface changed how people interacted with technology, paving the way for an entire smartphone ecosystem. This innovation reshaped industries, transformed communication, and influenced global culture in ways still felt today.",
+    "imageURL": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&h=400&fit=crop",
+    "category": "Technology"
+  },
+  {
+    "id": 6,
+    "year": 2015,
+    "title": "Paris Climate Agreement",
+    "description": "In December 2015, nearly 200 countries came together to sign the Paris Climate Agreement, committing to limit global temperature rise to well below 2°C above pre-industrial levels. This landmark accord represented an unprecedented global effort to address climate change, emphasizing renewable energy adoption, carbon reduction strategies, and environmental sustainability. It became a defining moment for international cooperation on climate policy.",
+    "imageURL": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop",
+    "category": "Environment"
+  },
+  {
+    "id": 7,
+    "year": 2020,
+    "title": "COVID-19 Pandemic",
+    "description": "The COVID-19 pandemic emerged in late 2019 and rapidly spread across the globe in 2020, causing unprecedented public health challenges and economic disruption. Nations implemented lockdowns, social distancing, and mass vaccination campaigns to control the virus's spread. Beyond its immediate health impact, the pandemic transformed education, work culture, healthcare systems, and global supply chains in lasting ways.",
+    "imageURL": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=600&h=400&fit=crop",
+    "category": "Health"
+  },
+  {
+    "id": 8,
+    "year": 2022,
+    "title": "James Webb Space Telescope Launch",
+    "description": "In December 2021, NASA launched the James Webb Space Telescope, the most advanced space observatory ever built, which became operational in 2022. Designed to study the earliest galaxies, distant exoplanets, and the birth of stars, JWST provides breathtaking imagery and groundbreaking data. Its discoveries are expected to deepen our understanding of the universe for decades to come.",
+    "imageURL": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&h=400&fit=crop",
+    "category": "Space"
+  },
+  {
+    "id": 9,
+    "year": 2023,
+    "title": "AI Revolution",
+    "description": "The rapid advancements in artificial intelligence, led by breakthroughs in generative models like ChatGPT, marked 2023 as a defining year for technology. AI systems began transforming industries such as healthcare, education, entertainment, and software development. These developments sparked widespread discussions on ethics, job automation, and the responsible integration of AI into daily life.",
+    "imageURL": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+    "category": "Technology"
+  },
+  {
+    "id": 10,
+    "year": 2024,
+    "title": "Space Tourism Milestone",
+    "description": "In 2024, commercial space tourism achieved a significant breakthrough as multiple private companies successfully launched civilian passengers into space. This milestone marked the beginning of a new chapter in human exploration, making space travel more accessible than ever before. It signaled a future where space adventures could become as common as air travel.",
+    "imageURL": "https://images.unsplash.com/photo-1446776858070-70c3d5ed6758?w=600&h=400&fit=crop",
+    "category": "Space"
+  }
+]
