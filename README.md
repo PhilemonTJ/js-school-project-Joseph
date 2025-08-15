@@ -75,6 +75,41 @@ The timeline is now fully interactive: events are loaded from a JSON file, rende
 **Result:**  
 Timeline events are now loaded dynamically and displayed as interactive cards. Users can view detailed event information in an accessible
 
+---
+
+⏳ **Task 4: TypeScript (Static Typing & Modular Code) – In Progress**
+
+### 🎯 Outcome
+
+Introduce static typing, modular structure, and a TypeScript build process to improve code maintainability and scalability.
+
+### 🔨 Deliverables
+
+#### **Setup**
+- Initialize TypeScript with `tsconfig.json` set to **strict** mode.
+- Organize source files under a new `src/` directory.
+
+#### **Code Conversion**
+- Convert `script.js` → `src/index.ts`.
+- Define interfaces/types for event data structure (`Event`, `Category`, etc.).
+- Use ES modules by separating logic into:
+  - **`fetcher.ts`** – Responsible for loading event data.
+  - **`renderer.ts`** – Handles DOM creation for event cards.
+  - **`modal.ts`** – Manages modal open/close logic.
+
+#### **Build Process**
+- Add build scripts to `package.json` using:
+  - `tsc` (TypeScript compiler) **or**
+  - A bundler (e.g., **Vite**, **Webpack**, **Parcel**).
+- Output compiled JS files into a `dist/` folder.
+
+#### **Verification**
+- Test the compiled app in the browser to ensure functionality matches the JavaScript version.
+
+---
+
+### ✅ Result
+The project is now **type-safe**, **modular**, and ready for scaling into a **React application**.
 
 ---
 
@@ -85,7 +120,7 @@ Timeline events are now loaded dynamically and displayed as interactive cards. U
 | ✅ 1    | **HTML** | Semantic, accessible skeleton |
 | ✅ 2    | **CSS** | Responsive static layout with Flexbox/Grid |
 | ✅ 3    | **JavaScript** | DOM interaction, events, dynamic timeline |
-| ⏳ 4    | **TypeScript** | Strongly typed version of logic and models |
+| ✅ 4    | **TypeScript** | Strongly typed version of logic and models |
 | ⏳ 5    | **React** | Component-based architecture with dynamic rendering |
 | ⏳ 6    | **Accessibility** | Audit and improvements for full usability |
 
