@@ -153,9 +153,10 @@ js-school-project-Joseph/
 
 ## 📌 Status
 
-**Current Task:** Current Task: ✅ Task 3 Complete – Timeline now dynamically loads events from JSON, with modal pop-ups for details.
 
-Next: **Task 4 – TypeScript Integration.**.
+**Current Task:** ✅ Task 4 – TypeScript integration and code modularization.
+
+Next: **Task 5 – React migration.**
 
 ---
 
