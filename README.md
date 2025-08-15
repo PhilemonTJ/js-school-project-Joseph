@@ -48,6 +48,35 @@ A responsive, visually structured layout using Flexbox and CSS Grid. Styled acco
 - **Variables**: CSS variables for colors and themes for easy dark mode support later
 
 ---
+## ✅ Task 3: JavaScript (Dynamic Rendering & Interactivity) – Completed
+
+### 🎯 Outcome
+
+The timeline is now fully interactive: events are loaded from a JSON file, rendered dynamically as cards, and detailed information is shown in a modal popup when an event is clicked.
+
+### 🔨 Deliverables
+
+- **Data Source**:  
+  - `events.json` in the project root contains at least 8 events, each with `year`, `title`, `description`, `imageURL`, and `category`.
+
+- **Dynamic Rendering**:
+  - `script.js` fetches and parses `events.json` asynchronously.
+  - The `#timeline` section is populated with event cards generated in JavaScript, each displaying the event’s image, title, year, and a short description.
+
+- **Interactivity**:
+  - Clicking an event card opens a modal (`#modal`) with full event details, including image, year, title, category, and description.
+  - Modal can be closed via a close button or by clicking outside the modal content.
+  - Accessibility features: modal uses `role="dialog"`, `aria-hidden`, and focus management for keyboard navigation.
+
+- **Code Placement**:
+  - All JavaScript logic is in `script.js`.
+  - The script is loaded at the end of `<body>` in `index.html` for optimal performance.
+
+**Result:**  
+Timeline events are now loaded dynamically and displayed as interactive cards. Users can view detailed event information in an accessible
+
+
+---
 
 ## 📅 Roadmap
 
@@ -55,7 +84,7 @@ A responsive, visually structured layout using Flexbox and CSS Grid. Styled acco
 |--------|-------|---------|
 | ✅ 1    | **HTML** | Semantic, accessible skeleton |
 | ✅ 2    | **CSS** | Responsive static layout with Flexbox/Grid |
-| ⏳ 3    | **JavaScript** | DOM interaction, events, dynamic timeline |
+| ✅ 3    | **JavaScript** | DOM interaction, events, dynamic timeline |
 | ⏳ 4    | **TypeScript** | Strongly typed version of logic and models |
 | ⏳ 5    | **React** | Component-based architecture with dynamic rendering |
 | ⏳ 6    | **Accessibility** | Audit and improvements for full usability |
@@ -65,11 +94,13 @@ A responsive, visually structured layout using Flexbox and CSS Grid. Styled acco
 ## 📁 Project Structure (Current)
 ```
 js-school-project-Joseph/
-├── index.html      # Semantic HTML layout (Task 1)
-├── styles.css      # Responsive static layout (Task 2)
-├── script.js       # To be added in Task 3
-├── README.md       # Project goal, roadmap, and task status
-└── .gitignore      # Optional (Node/TS/React-specific)
+├── index.html       # Semantic HTML layout (Task 1)
+├── styles.css       # Responsive static layout (Task 2)
+├── script.js        # Event fetching and modal logic (Task 3)
+├── events.json      # Event dataset for rendering
+├── assets/          # Images for event cards
+├── README.md        # Project goal, roadmap, and task status
+└── .gitignore       # Optional (Node/TS/React-specific)
 ```
 
 ---
@@ -78,7 +109,7 @@ js-school-project-Joseph/
 
 - **HTML5** – Semantic structure ✔️
 - **CSS3 (Flexbox/Grid)** – Responsive layout ✔️
-- **JavaScript (ES6+)** – Interactivity
+- **JavaScript (ES6+)** – Interactivity ✔️
 - **TypeScript** – Strong typing and tooling
 - **React + Vite** – SPA with reusable components
 - **ARIA & WCAG Guidelines** – Accessibility compliance
@@ -87,9 +118,9 @@ js-school-project-Joseph/
 
 ## 📌 Status
 
-**Current Task:** ✅ Task 2 Complete – HTML and CSS implemented with responsive grid and filter layout.
+**Current Task:** Current Task: ✅ Task 3 Complete – Timeline now dynamically loads events from JSON, with modal pop-ups for details.
 
-Next: **Task 3 – JavaScript for Interactivity**.
+Next: **Task 4 – TypeScript Integration.**.
 
 ---
 
