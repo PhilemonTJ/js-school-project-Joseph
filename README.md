@@ -77,7 +77,7 @@ Timeline events are now loaded dynamically and displayed as interactive cards. U
 
 ---
 
-⏳ **Task 4: TypeScript (Static Typing & Modular Code) – In Progress**
+ ## ✅ Task 4: TypeScript (Static Typing & Modular Code) – Completed
 
 ### 🎯 Outcome
 
@@ -106,10 +106,51 @@ Introduce static typing, modular structure, and a TypeScript build process to im
 #### **Verification**
 - Test the compiled app in the browser to ensure functionality matches the JavaScript version.
 
----
-
 ### ✅ Result
 The project is now **type-safe**, **modular**, and ready for scaling into a **React application**.
+
+
+---
+## ✅ Task 5: React (Component-Based Architecture) – Completed
+
+### 🎯 Outcome
+
+Migrate the Timeline App to a modern React single-page application (SPA) with reusable components, state management, and improved developer experience.
+
+### 🔨 Deliverables
+
+- **Project Setup**:
+  - Initialize a new React project using [Vite](https://vitejs.dev/) or [Create React App](https://create-react-app.dev/).
+  - Organize source files under `src/` with clear separation of components, assets, and styles.
+
+- **Component Structure**:
+  - **App**: Root component managing global state and layout.
+  - **Header**: Logo, theme toggle, and navigation.
+  - **FilterBar**: Dropdowns or pills for filtering events by category/year.
+  - **Timeline**: Renders a grid/list of `EventCard` components.
+  - **EventCard**: Displays summary info for each event.
+  - **Modal**: Shows detailed event info when an event is selected.
+  - **Footer**: Copyright.
+
+- **Data Handling**:
+  - Load events from a local JSON file or via fetch.
+  - Use React state/hooks for managing events, filters, and modal visibility.
+
+- **Interactivity & Accessibility**:
+  - Clicking an event card opens the modal with full details.
+  - Modal supports keyboard navigation and ARIA roles.
+  - Filters update the timeline in real time.
+
+- **Styling**:
+  - Reuse and adapt existing CSS, or use CSS Modules or styled-components for scoped styles.
+  - Maintain responsiveness and dark mode support.
+
+- **Build & Test**:
+  - Ensure the app builds and runs locally.
+  - Test all interactive features and accessibility.
+
+**Result:**  
+The Timeline App is now a modular, maintainable React SPA with reusable components, dynamic rendering,
 
 ---
 
@@ -121,7 +162,7 @@ The project is now **type-safe**, **modular**, and ready for scaling into a **Re
 | ✅ 2    | **CSS** | Responsive static layout with Flexbox/Grid |
 | ✅ 3    | **JavaScript** | DOM interaction, events, dynamic timeline |
 | ✅ 4    | **TypeScript** | Strongly typed version of logic and models |
-| ⏳ 5    | **React** | Component-based architecture with dynamic rendering |
+| ✅ 5    | **React** | Component-based architecture with dynamic rendering |
 | ⏳ 6    | **Accessibility** | Audit and improvements for full usability |
 
 ---
@@ -145,18 +186,17 @@ js-school-project-Joseph/
 - **HTML5** – Semantic structure ✔️
 - **CSS3 (Flexbox/Grid)** – Responsive layout ✔️
 - **JavaScript (ES6+)** – Interactivity ✔️
-- **TypeScript** – Strong typing and tooling
-- **React + Vite** – SPA with reusable components
+- **TypeScript** – Strong typing and tooling ✔️
+- **React + Vite** – SPA with reusable components ✔️
 - **ARIA & WCAG Guidelines** – Accessibility compliance
 
 ---
 
 ## 📌 Status
 
+**Current Task:** ✅ Task 5 – React migration.
 
-**Current Task:** ✅ Task 4 – TypeScript integration and code modularization.
-
-Next: **Task 5 – React migration.**
+Next: **Task 6 – Accessibility audit and improvements.**
 
 ---
 

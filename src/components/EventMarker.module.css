@@ -1,0 +1,68 @@
+/* Event card styling */
+.eventCard {
+  position: relative;
+  width: 410px;
+  min-height: 160px;
+  background: var(--card-bg);
+  color: var(--card-fg);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  margin: 2.5rem 0;
+  padding: 2rem 2.2rem 1.5rem 2.2rem;
+  z-index: 2;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+  outline: none;
+  border: 1.5px solid var(--border-color, #e5e7eb);
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  left: unset;
+}
+.eventCard:focus, .eventCard:hover {
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.18);
+  border: 2px solid var(--accent);
+}
+/* Left and right alignment for event cards */
+/* .left {
+  align-self: flex-start;
+  margin-right: auto;
+  margin-left: 0;
+  transform: translateX(-10%);
+} */
+.left {
+  align-self: flex-start;
+  margin-right: 56%;
+  margin-left: 0;
+  transform: translateX(-8%);
+}
+.right {
+  align-self: flex-end;
+  margin-left: 56%;
+  margin-right: 0;
+  transform: translateX(8%);
+}
+.year {
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.desc {
+  font-size: 1.1rem;
+  color: var(--card-desc);
+  margin-bottom: 1rem;
+}
+.category {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.3rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}

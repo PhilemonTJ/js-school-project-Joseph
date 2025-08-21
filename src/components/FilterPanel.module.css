@@ -1,0 +1,32 @@
+.filterPanel {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto 0 auto;
+  width: fit-content;
+  position: sticky;
+}
+select {
+  margin-left: 0.7rem;
+  padding: 0.3rem 1.1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  background: var(--background-color);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+[data-theme="dark"] select {
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid var(--border-color);
+}
+
+select:hover, select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}

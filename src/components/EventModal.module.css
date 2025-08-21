@@ -1,0 +1,121 @@
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30, 34, 54, 0.45);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+}
+
+/* Modal base styles */
+.modal {
+  background: var(--modal-bg, #fff);
+  color: var(--modal-text, #1a1a1a);
+  border-radius: 20px;
+  box-shadow: 0 8px 40px 0 rgba(0,0,0,0.18);
+  min-width: 480px;
+  max-width: 540px;
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  animation: modalSlideIn 0.3s ease;
+  border: 1.5px solid var(--modal-border, #e5e7eb);
+  padding: 2.2rem 2.2rem 2rem 2.2rem;
+  box-sizing: border-box;
+}
+
+[data-theme="dark"] .modal {
+  --modal-bg: #23273a;
+  --modal-text: #f3f6fa;
+  --modal-border: #2d3144;
+}
+[data-theme="light"] .modal {
+  --modal-bg: #fff;
+  --modal-text: #1a1a1a;
+  --modal-border: #e5e7eb;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.image {
+  width: 100%;
+  border-radius: 14px 14px 0 0;
+  margin: -2.2rem -2.2rem 1.5rem -2.2rem;
+  object-fit: cover;
+  max-height: 240px;
+  min-height: 160px;
+  background: #f8fafc;
+  display: block;
+  align-items: center;
+  justify-content: center;  
+}
+
+.close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: var(--modal-bg, #fff);
+  color: var(--modal-text, #1a1a1a);
+  border: 1.5px solid var(--modal-border, #e5e7eb);
+  border-radius: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.2rem 0.7rem;
+  z-index: 10;
+  transition: background 0.2s, color 0.2s;
+}
+.close:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: var(--modal-text, #1a1a1a);
+  line-height: 1.1;
+}
+
+.year {
+  color: var(--primary-color);
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  margin-top: 0.1rem;
+}
+
+.desc {
+  font-size: 1.13rem;
+  color: var(--modal-text, #1a1a1a);
+  opacity: 0.92;
+  margin-bottom: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.category {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 20px;
+  padding: 0.3rem 1.1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 0.2rem;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.07);
+}
