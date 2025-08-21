@@ -1,0 +1,113 @@
+/* Container for the timeline */
+.timelineContainer {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Timeline main area */
+.timeline {
+  position: relative;
+  width: 80vw;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Vertical timeline line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+  transform: translateX(-50%);
+  z-index: 0;
+  border-radius: 2.5px;
+  opacity: 1;
+}
+
+/* Event marker dot */
+/* Timeline marker dot */
+.marker {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: var(--primary-color);
+  border: 4px solid var(--background-color);
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+  opacity: 1;
+}
+
+/* Responsive event card alignment */
+.left {
+  position: relative;
+  left: 0;
+  margin-right: auto;
+}
+.right {
+  position: relative;
+  left: 50%;
+  margin-left: auto;
+}
+  /* width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+  position: relative;
+  width: 80vw;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--timeline-line);
+  transform: translateX(-50%);
+  z-index: 0;
+} */
+
+.timelineContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.timeline {
+  position: relative;
+  width: 80vw;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+  transform: translateX(-50%);
+  z-index: 0;
+}
