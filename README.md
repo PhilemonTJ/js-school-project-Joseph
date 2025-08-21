@@ -170,13 +170,16 @@ The Timeline App is now a modular, maintainable React SPA with reusable componen
 ## 📁 Project Structure (Current)
 ```
 js-school-project-Joseph/
-├── index.html       # Semantic HTML layout (Task 1)
-├── styles.css       # Responsive static layout (Task 2)
-├── script.js        # Event fetching and modal logic (Task 3)
-├── events.json      # Event dataset for rendering
-├── assets/          # Images for event cards
-├── README.md        # Project goal, roadmap, and task status
-└── .gitignore       # Optional (Node/TS/React-specific)
+├── index.html          # Semantic HTML layout (Task 1)
+├── styles.css          # Responsive styling (Task 2)
+├── script.js           # Vanilla JavaScript logic for dynamic timeline (Task 3)
+├── data/               # JSON dataset for events (Task 3)
+├── src/                # Source TypeScript files (Task 4)
+├── tsconfig.json       # TypeScript configuration in strict mode (Task 4)
+├── package.json        # Project metadata and scripts
+├── package-lock.json   # Locked dependency tree
+├── build.js            # Build script (perhaps for bundling/compiling TS)
+└── README.md           # Project overview, roadmap, and task status
 ```
 
 ---
