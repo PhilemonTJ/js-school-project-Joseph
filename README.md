@@ -85,29 +85,29 @@ Introduce static typing, modular structure, and a TypeScript build process to im
 
 ### 🔨 Deliverables
 
-#### **Setup**
-- Initialize TypeScript with `tsconfig.json` set to **strict** mode.
-- Organize source files under a new `src/` directory.
+- **Setup**
+  - Initialize TypeScript with `tsconfig.json` set to **strict** mode.
+  - Organize source files under a new `src/` directory.
 
-#### **Code Conversion**
-- Convert `script.js` → `src/index.ts`.
-- Define interfaces/types for event data structure (`Event`, `Category`, etc.).
-- Use ES modules by separating logic into:
-  - **`fetcher.ts`** – Responsible for loading event data.
-  - **`renderer.ts`** – Handles DOM creation for event cards.
-  - **`modal.ts`** – Manages modal open/close logic.
+- **Code Conversion**
+  - Convert `script.js` → `src/index.ts`.
+  - Define interfaces/types for event data structure (`Event`, `Category`, etc.).
+  - Use ES modules by separating logic into:
+    - **`fetcher.ts`** – Responsible for loading event data.
+    - **`renderer.ts`** – Handles DOM creation for event cards.
+    - **`modal.ts`** – Manages modal open/close logic.
 
-#### **Build Process**
-- Add build scripts to `package.json` using:
-  - `tsc` (TypeScript compiler) **or**
-  - A bundler (e.g., **Vite**, **Webpack**, **Parcel**).
-- Output compiled JS files into a `dist/` folder.
+- **Build Process**
+  - Add build scripts to `package.json` using:
+    - `tsc` (TypeScript compiler) **or**
+    - A bundler (e.g., **Vite**, **Webpack**, **Parcel**).
+  - Output compiled JS files into a `dist/` folder.
 
-#### **Verification**
-- Test the compiled app in the browser to ensure functionality matches the JavaScript version.
+- **Verification**
+  - Test the compiled app in the browser to ensure functionality matches the JavaScript version.
 
-### ✅ Result
-The project is now **type-safe**, **modular**, and ready for scaling into a **React application**.
+**Result:**   
+The project is now *type-safe*, *modular*, and ready for scaling into a *React application*.
 
 
 ---
@@ -154,6 +154,44 @@ The Timeline App is now a modular, maintainable React SPA with reusable componen
 
 ---
 
+## ✅ Task 6: Web Accessibility (Designing for Everyone) – Completed
+
+### 🎯 Outcome
+Ensure the Timeline App is accessible to all users, including those with disabilities, by following best practices for web accessibility (WCAG 2.1 AA).
+
+---
+
+### 🔨 Deliverables
+
+- **ARIA Roles & Attributes**
+  - Added appropriate ARIA roles and attributes to all interactive elements.
+  - Used `role="dialog"` and `aria-modal="true"` on the modal, or used the native `<dialog>` element.
+  - Marked the active timeline marker with `aria-current="step"`.
+
+- **Focus Management**
+  - Trapped keyboard focus within the modal when it is open.
+  - Returned focus to the triggering timeline marker when the modal closes.
+
+- **Keyboard Navigation**
+  - Ensured all timeline markers are reachable via Tab and Arrow keys.
+  - Allowed users to open the modal with Enter/Space and close it with Esc.
+
+- **Color Contrast**
+  - Verified all text and interactive elements meet WCAG AA contrast ratio (≥4.5:1).
+
+- **Other WCAG Requirements**
+  - Provided visible focus indicators for all interactive elements.
+  - Ensured all content is accessible with screen readers.
+  - Used semantic HTML wherever possible.
+
+- **Documentation**
+  - Documented all accessibility features and decisions in `ACCESSIBILITY.md`.
+
+**Result:**   
+The Timeline App is now inclusive and usable for everyone, meeting modern accessibility standards and guidelines.
+
+---
+
 ## 📅 Roadmap
 
 | Task # | Stage | Outcome |
@@ -163,48 +201,62 @@ The Timeline App is now a modular, maintainable React SPA with reusable componen
 | ✅ 3    | **JavaScript** | DOM interaction, events, dynamic timeline |
 | ✅ 4    | **TypeScript** | Strongly typed version of logic and models |
 | ✅ 5    | **React** | Component-based architecture with dynamic rendering |
-| ⏳ 6    | **Accessibility** | Audit and improvements for full usability |
+| ✅ 6    | **Accessibility** | Audit and improvements for full usability |
 
 ---
 
 ## 📁 Project Structure (Current)
 ```
 js-school-project-Joseph/
-├── index.html          # Semantic HTML layout (Task 1)
-├── styles.css          # Responsive styling (Task 2)
-├── script.js           # Vanilla JavaScript logic for dynamic timeline (Task 3)
-├── data/               # JSON dataset for events (Task 3)
-├── src/                # Source TypeScript files (Task 4)
-├── tsconfig.json       # TypeScript configuration in strict mode (Task 4)
-├── package.json        # Project metadata and scripts
-├── package-lock.json   # Locked dependency tree
-├── build.js            # Build script (perhaps for bundling/compiling TS)
-└── README.md           # Project overview, roadmap, and task status
+├── public/ # Static assets (favicon, etc.)
+├── src/
+│ ├── assets/ # Images and static resources
+│ ├── components/ # React components
+│ │ ├── Header.tsx
+│ │ ├── Header.module.css
+│ │ ├── FilterPanel.tsx
+│ │ ├── FilterPanel.module.css
+│ │ ├── Timeline.tsx
+│ │ ├── Timeline.module.css
+│ │ ├── EventCard.tsx
+│ │ ├── EventCard.module.css
+│ │ ├── EventMarker.tsx
+│ │ ├── EventMarker.module.css
+│ │ ├── EventModal.tsx
+│ │ ├── EventModal.module.css
+│ │ └── ... # Other UI components
+│ ├── data/
+│ │ └── events.json # Timeline event data
+│ ├── App.tsx # Main app component
+│ ├── main.tsx # React entry point
+│ └── index.css # Global styles and variables
+├── ACCESSIBILITY.md # Accessibility documentation
+├── package.json # Project metadata and scripts
+├── tsconfig.json # TypeScript configuration
+├── vite.config.ts # Vite configuration
+└── README.md # Project overview and instructions
 ```
 
 ---
 
-## 🧑‍💻 Tech Stack (Planned)
+## 🧑‍💻 Final Tech Stack
 
-- **HTML5** – Semantic structure ✔️
-- **CSS3 (Flexbox/Grid)** – Responsive layout ✔️
-- **JavaScript (ES6+)** – Interactivity ✔️
-- **TypeScript** – Strong typing and tooling ✔️
-- **React + Vite** – SPA with reusable components ✔️
+- **HTML5** – Semantic structure
+- **CSS3 (Flexbox/Grid)** – Responsive layout
+- **JavaScript (ES6+)** – Interactivity
+- **TypeScript** – Strong typing and tooling
+- **React + Vite** – SPA with reusable components
 - **ARIA & WCAG Guidelines** – Accessibility compliance
 
 ---
 
 ## 📌 Status
 
-**Current Task:** ✅ Task 5 – React migration.
-
-Next: **Task 6 – Accessibility audit and improvements.**
+**Current Task:** ✅ Task 6 – Accessibility audit and improvements
 
 ---
 
 ## 📝 Author
 
-Developed as part of the school project submission: `js-school-project-Joseph`
+Developed as part of the JS school project submission: `js-school-project-Joseph`
 
-> ✨ Stay tuned for updates in future branches!
