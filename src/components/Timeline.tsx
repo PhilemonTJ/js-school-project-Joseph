@@ -8,14 +8,30 @@ interface TimelineProps {
   onEventClick: (event: Event) => void;
 }
 
-const Timeline: React.FC<TimelineProps> = ({ events, onEventClick }) => (
-  <div className={styles.timelineContainer}>
-    <div className={styles.timeline}>
-      {events.map((event, idx) => (
-        <EventMarker key={event.id} event={event} onClick={() => onEventClick(event)} isLeft={idx % 2 === 0} />
-      ))}
+const Timeline: React.FC<TimelineProps> = ({ events, onEventClick }) => {
+  if (events.length === 0) {
+    return (
+      <div className={styles.timelineContainer}>
+        <div className={`${styles.timeline} ${styles.noLine}`} style={{ minHeight: '40vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div className={styles.emptyState}>No events found matching your filters</div>
+        </div>
+      </div>
+    );
+  }
+  return (
+    <div className={styles.timelineContainer}>
+      <div className={styles.timeline}>
+        {events.map((event, idx) => (
+          <EventMarker
+            key={event.id}
+            event={event}
+            onClick={() => onEventClick(event)}
+            isLeft={idx % 2 === 0}
+          />
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Timeline;

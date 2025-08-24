@@ -1,14 +1,41 @@
+/* Wrapper for event and marker to align dot on timeline */
+.eventWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+/* Timeline marker dot for each event card */
+.marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  background: #2563eb;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  z-index: 3;
+  box-shadow:
+    0 0 0 4px rgba(59,130,246,0.25),
+    0 4px 16px 0 rgba(59,130,246,0.18),
+    0 1.5px 8px 0 rgba(0,0,0,0.10);
+  opacity: 1;
+  transition: box-shadow 0.2s, background 0.2s;
+  outline: 2px solid #3b82f6;
+}
 /* Event card styling */
 .eventCard {
   position: relative;
-  width: 410px;
+  width: 75rem;
   min-height: 160px;
-  background: var(--card-bg);
+  background: var(--surface-color);
   color: var(--card-fg);
   border-radius: 18px;
-  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  box-shadow: var(--shadow-medium);
   margin: 2.5rem 0;
-  padding: 2rem 2.2rem 1.5rem 2.2rem;
+  padding: 1rem 1.58rem;
   z-index: 2;
   cursor: pointer;
   transition: box-shadow 0.2s, background 0.2s;
@@ -19,27 +46,44 @@
   left: unset;
 }
 .eventCard:focus, .eventCard:hover {
-  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.18);
+  box-shadow: var(--shadow-heavy);
   border: 2px solid var(--accent);
 }
-/* Left and right alignment for event cards */
-/* .left {
-  align-self: flex-start;
-  margin-right: auto;
-  margin-left: 0;
-  transform: translateX(-10%);
-} */
 .left {
-  align-self: flex-start;
-  margin-right: 56%;
+  margin-right: 55%;
   margin-left: 0;
-  transform: translateX(-8%);
+  align-self: flex-start;
 }
 .right {
-  align-self: flex-end;
-  margin-left: 56%;
+  margin-left: 55%;
   margin-right: 0;
-  transform: translateX(8%);
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .eventCard {
+    width: 90vw;
+    max-width: 97vw;
+    margin-left: 2.5rem;
+    margin-right: 0;
+    min-height: 120px;
+    font-size: 1rem;
+  }
+  .eventWrapper {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    min-height: 100px;
+  }
+  .marker {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0;
+  }
+}
+.eventCard {
+  position: relative;
 }
 .year {
   color: var(--accent);
@@ -48,20 +92,20 @@
   margin-bottom: 0.5rem;
 }
 .title {
-  font-size: 1.5rem;
+  font-size: 1.50rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 .desc {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: var(--card-desc);
   margin-bottom: 1rem;
 }
 .category {
   display: inline-block;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: #fff;
-  border-radius: 8px;
+  border-radius: 2rem;
   padding: 0.3rem 1.1rem;
   font-size: 1rem;
   font-weight: 600;
