@@ -8,12 +8,22 @@ interface EventMarkerProps {
   isLeft: boolean;
 }
 
+
 const EventMarker: React.FC<EventMarkerProps> = ({ event, onClick, isLeft }) => (
-  <div className={`${styles.eventCard} ${isLeft ? styles.left : styles.right}`} onClick={onClick} tabIndex={0} role="button" aria-pressed="false">
-    <div className={styles.year}>{event.year}</div>
-    <div className={styles.title}>{event.title}</div>
-    <div className={styles.desc}>{event.description.slice(0, 100)}...</div>
-    <span className={styles.category}>{event.category}</span>
+  <div className={styles.eventWrapper}>
+    <div className={styles.marker}></div>
+    <div
+      className={`${styles.eventCard} ${isLeft ? styles.left : styles.right}`}
+      onClick={onClick}
+      tabIndex={0}
+      role="button"
+      aria-pressed="false"
+    >
+      <div className={styles.year}>{event.year}</div>
+      <div className={styles.title}>{event.title}</div>
+      <div className={styles.desc}>{event.description.slice(0, 150)}...</div>
+      <span className={styles.category}>{event.category}</span>
+    </div>
   </div>
 );
 

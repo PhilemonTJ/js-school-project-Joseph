@@ -3,13 +3,19 @@
   gap: 2rem;
   align-items: center;
   justify-content: center;
-  margin: 1.5rem auto 0 auto;
-  width: fit-content;
-  position: sticky;
+  margin: 0 auto;
+  width: 100vw;
+  position: fixed;
+  top: 4.5rem;
+  z-index: 100;
+  background: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.03);
+  padding: 1rem 0;
 }
 select {
-  margin-left: 0.7rem;
-  padding: 0.3rem 1.1rem;
+  margin: 0 0.7rem;
+  padding: 0.3rem 1.0rem;
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
   background: var(--background-color);

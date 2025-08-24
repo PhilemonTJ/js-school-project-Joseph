@@ -17,7 +17,7 @@ const App: React.FC = () => {
   const [events, setEvents] = useState<Event[]>([]);
   const [filtered, setFiltered] = useState<Event[]>([]);
   const [modalEvent, setModalEvent] = useState<Event | null>(null);
-  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [category, setCategory] = useState<string>('All');
   const [year, setYear] = useState<number | 'All'>('All');
 
